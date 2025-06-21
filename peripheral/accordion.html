@@ -1,0 +1,166 @@
+<section id="hotels">
+  <h2>Hotels Around University of Lagos – PALFA Conference</h2>
+  <style>
+    #hotels {
+      padding: 1em;
+      font-family: Arial, sans-serif;
+      overflow-x: auto;
+    }
+    #hotels table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    #hotels th, #hotels td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+    #hotels th {
+      background-color: #f5f5f5;
+    }
+    #hotels a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    @media screen and (max-width: 768px) {
+      #hotels table,
+      #hotels thead,
+      #hotels tbody,
+      #hotels th,
+      #hotels td,
+      #hotels tr {
+        display: block;
+      }
+      #hotels thead {
+        display: none;
+      }
+      #hotels tr {
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        padding: 1em;
+        background: #fff;
+      }
+      #hotels td {
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #eee;
+      }
+      #hotels td::before {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: bold;
+        content: attr(data-label);
+      }
+    }
+  </style>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Hotel Name</th>
+        <th>Address / Location</th>
+        <th>Room Options (₦ / Night)</th>
+        <th>Website</th>
+        <th>Phone Numbers</th>
+        <th>Distance from UNILAG</th>
+        <th>Booking Info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Hotel Name">UNILAG Guest House</td>
+        <td data-label="Address / Location">University of Lagos</td>
+        <td data-label="Room Options (₦ / Night)">₦18,700 - ₦110,000</td>
+        <td data-label="Website"><a href="mailto:reservations@unilagguesthouse.com">Email</a></td>
+        <td data-label="Phone Numbers">+234-8142631511, +234-9135802663</td>
+        <td data-label="Distance from UNILAG">Within Campus</td>
+        <td data-label="Booking Info">Call to book</td>
+      </tr>
+      <tr>
+        <td data-label="Hotel Name">NSPRI Guest House</td>
+        <td data-label="Address / Location">32-38, Barikisu Iyede Street, Off University Road, Yaba</td>
+        <td data-label="Room Options (₦ / Night)">₦25,000 - ₦37,000</td>
+        <td data-label="Website"><a href="https://nspriguesthouses.com/">Website</a></td>
+        <td data-label="Phone Numbers">+234-8150482519, +234-8171223982</td>
+        <td data-label="Distance from UNILAG">700m (2 mins drive)</td>
+        <td data-label="Booking Info">Call to book</td>
+      </tr>
+      <tr>
+        <td data-label="Hotel Name">King Celia Hotels and Suites</td>
+        <td data-label="Address / Location">8, Jibowu St, Jibowu, Lagos</td>
+        <td data-label="Room Options (₦ / Night)">₦49,000 - ₦57,000</td>
+        <td data-label="Website"><a href="https://kings-celia-hotel.lagos-hotels-ng.com/en/">Website</a></td>
+        <td data-label="Phone Numbers">+234-8177774329</td>
+        <td data-label="Distance from UNILAG">2.7 km (8 mins drive)</td>
+        <td data-label="Booking Info">Call to book</td>
+      </tr>
+      <tr>
+        <td data-label="Hotel Name">Caritas Inn, Yaba</td>
+        <td data-label="Address / Location">336, Herbert Macaulay Way, Sabo Yaba, Lagos</td>
+        <td data-label="Room Options (₦ / Night)">₦38,000 - ₦67,000</td>
+        <td data-label="Website"><a href="https://caritasinnyabahotel.com/">Website</a></td>
+        <td data-label="Phone Numbers">+234-9122649648</td>
+        <td data-label="Distance from UNILAG">1.6 km (4 mins drive)</td>
+        <td data-label="Booking Info">Call to book</td>
+      </tr>
+      <tr>
+        <td data-label="Hotel Name">Caritas Inn, Igbobi</td>
+        <td data-label="Address / Location">WAEC Bus stop, Igbobi College Road, Yaba</td>
+        <td data-label="Room Options (₦ / Night)">₦38,000 - ₦67,000</td>
+        <td data-label="Website"><a href="https://caritasinnyabahotel.com/">Website</a></td>
+        <td data-label="Phone Numbers">+234-9023014325</td>
+        <td data-label="Distance from UNILAG">2.8 km (8 mins drive)</td>
+        <td data-label="Booking Info">Call to book</td>
+      </tr>
+      <tr>
+        <td data-label="Hotel Name">Lagoon Hotel & Suites</td>
+        <td data-label="Address / Location">88, St Finbarr's College Rd, opposite Fidelity Bank, Akoka, Lagos</td>
+        <td data-label="Room Options (₦ / Night)">₦18,000 - ₦65,000</td>
+        <td data-label="Website"><a href="https://www.tripadvisor.com/">TripAdvisor</a></td>
+        <td data-label="Phone Numbers">+234-8173444888, +234-7033405546</td>
+        <td data-label="Distance from UNILAG">3.6 km (9 mins drive)</td>
+        <td data-label="Booking Info">Call to book</td>
+      </tr>
+      <tr>
+        <td data-label="Hotel Name">Sylva Link Hotel Ltd</td>
+        <td data-label="Address / Location">12, Asani St, Akoka, Lagos</td>
+        <td data-label="Room Options (₦ / Night)">₦20,300 - ₦28,800</td>
+        <td data-label="Website"><a href="https://naijadirectory.org/listing/sylva-link-hotel/">Website</a></td>
+        <td data-label="Phone Numbers">+234-8136951710</td>
+        <td data-label="Distance from UNILAG">3.3 km (8 mins drive)</td>
+        <td data-label="Booking Info">Call to book</td>
+      </tr>
+      <tr>
+        <td data-label="Hotel Name">Hadmof Inn Nigeria Limited</td>
+        <td data-label="Address / Location">21, Moore Rd off Herbert Macaulay Way Yaba, Lagos</td>
+        <td data-label="Room Options (₦ / Night)">₦25,000 - ₦50,000</td>
+        <td data-label="Website"><a href="https://hotels.ng/hotel/44938-hadmof-inn-lagos">Website</a></td>
+        <td data-label="Phone Numbers">+234-9095218685, +234-7066447152</td>
+        <td data-label="Distance from UNILAG">1.4 km (4 mins drive)</td>
+        <td data-label="Booking Info">Call to book</td>
+      </tr>
+      <tr>
+        <td data-label="Hotel Name">Wonderking Hotel</td>
+        <td data-label="Address / Location">13, Lawani Street, Akoka, Yaba, Lagos</td>
+        <td data-label="Room Options (₦ / Night)">₦20,275 - ₦68,800</td>
+        <td data-label="Website">—</td>
+        <td data-label="Phone Numbers">+234-8033653919</td>
+        <td data-label="Distance from UNILAG">900 m (3 mins drive)</td>
+        <td data-label="Booking Info">Call to book</td>
+      </tr>
+      <tr>
+        <td data-label="Hotel Name">Other Hotels (TripAdvisor)</td>
+        <td data-label="Address / Location">Clustered around Ikeja, ~10 km to UNILAG</td>
+        <td data-label="Room Options (₦ / Night)">Varies</td>
+        <td data-label="Website"><a href="https://www.tripadvisor.com/">TripAdvisor</a></td>
+        <td data-label="Phone Numbers">—</td>
+        <td data-label="Distance from UNILAG">~20 mins drive</td>
+        <td data-label="Booking Info">Book via TripAdvisor</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

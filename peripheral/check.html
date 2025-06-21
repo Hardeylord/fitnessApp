@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Hero Banner Container */
+        .hero-banner-container {
+            position: relative;
+            width: 80%;
+            /* min-height: 40vh; /* Adjust height as needed */
+            overflow: hidden; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0px auto;
+            padding: 0;
+        }
+
+        /* Hero Banner Image */
+        .hero-banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures the image covers the container */
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        /* Overlay Effect for Better Text Visibility */
+        .hero-banner-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            z-index: 2;
+        }
+
+        /* Hero Content */
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            color: #fff;
+        }
+
+        /* Responsive Typography */
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Custom Tab Styling */
+        .nav-tabs {
+            display: flex;
+            flex-wrap: nowrap; /* Prevent wrapping */
+            overflow-x: auto; /*Enable horizontal scrolling*/
+            gap: 3px; /* Reduce gap between tabs */
+            padding-bottom: 10px; /* Add space for scrollbar */
+        }
+
+        .nav-tabs .nav-link {
+            font-size: 0.9rem; /* Smaller font size for mobile */
+            border: 1px solid transparent;
+            border-radius: 0.25rem;
+            padding: 8px 12px; /* Reduce padding */
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #fff;
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+        .nav-tabs .nav-link:hover {
+            background-color: #e9ecef;
+            border-color: #dee2e6;
+        }
+
+        .tab-content {
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-top: none;
+            border-radius: 0 0 0.25rem 0.25rem;
+            background-color: #f8f4f4;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Read More Button Styling */
+        .read-more-btn {
+            background-color: #0d6efd;
+            color: #fff;
+            width:60%;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin: 0px auto;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more-btn:hover {
+            background-color: #0b5ed7;
+        }
+
+        /* Hidden Content */
+        .hidden-content {
+            display: none;
+            margin-top: 0px;
+        }
+
+        
+    </style>
+
+    <div class="container-fluid p-0 flex">
+        <!-- <div class="hero-banner-container">
+            <img src="https://lipanonline.org/wp-content/uploads/2025/04/hero-1.jpeg" alt="PALFA 2025 Banner" class="hero-banner-image">
+            
+        </div> -->
+
+        <div class="container mt-4 ">
+            <!-- Tabs for Desktop and Mobile View -->
+            <div class="tabs-container ml-9">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">CONFERENCE THEME</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">SUB-THEMES</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">CALL FOR ABSTRACT</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab">BOOK HOTEL</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="tab5-tab" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab">REGISTER HERE</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content mt-3">
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                        <div class="card card-body">
+                            <h2>Shaping the Future of Africa through Innovative Literacy Approaches</h2>
+                            <p>The future for the African continent as envisioned in the Pan African 2063 Agenda for “an integrated, prosperous and peaceful Africa, driven by its own citizens and representing a dynamic force in the global arena” calls for immediate action.</p>
+                            <div class="hidden-content">
+                                <p>The dynamic and unpredictable revolution in new and emerging technologies, especially Artificial Intelligence (AI) and machine learning, demands that we have a well-educated citizenry for Africa's advancement and sustainable development.</p>
+                                <p>Having been in the forefront of literacy empowerment in Africa since 1999, the Pan Africa Literacy For All (PALFA) is positioned to support the new agenda through literacy dialogues. This will ensure that Africa, as a continent, contributes significantly to the building of a “literate, creative and adaptive citizenry equipped with 21st Century skills for a competitive global environment”. This lofty vision will however remain a mirage if the depressing education and literacy statistics at the continental, regional and national levels are not addressed as a matter of urgency and priority. The African continent, as a youthful population with low literacy rates, is characterized with high percentage of out-of-school children (ages 5-9), while seven out of 10 children are unable to read and comprehend a passage at age 10.</p>
+                                <p>Global digital technology companies seem to advocate “buttonification of education” as a panacea, arguing that Edtech can save time and money by generating teaching and learning materials like curricula with a press of a button. However, critical scholars identify the risks and potential harms from algorithmic biases based on western knowledge systems and racialized power relations, including the standardization of instructional design, and the marginalization or exclusion of African indigenous knowledge systems. Since education does not exist outside of literacy development, PALFA 2025 seeks to move beyond these dichotomous debates and envision what literacy education should look like in “The Africa we want” in the context of Agenda 2063.</p>
+                                <p>Consequently, to identify “what works” in literacy education in Africa, PALFA 2025 invites contributions that reimagine the Africa we want without homogenizing peoples and places; and how we might (re)design governance structures, curriculum, and pedagogies in accord with these visionings without falling prey to the pervading influence of tech-solutionism. Nonetheless, literacy practices in Africa need to take into account the ebbs and flows of the global context that include:
+                                    <ul>
+                                        <li>Changes and advances in information and communication technology revolution</li>
+                                        <li>Globalisation and changes in production</li>
+                                        <li>Global security concerns</li>
+                                        <li>The impact of climate change,</li>
+                                        <li>Utilisation of technology to ensure a decent standard of living, and</li>
+                                        <li>Epistemic violence and equity manifest in curricular content, pedagogies, and technologies.</li>
+                                    </ul>
+                                </p>
+                                <h3>Conference Specific Objectives are to:</h3>
+                                <ul>
+                                    <li>Interrogate political, economic, socio-cultural, environmental, technological, and globalisation factors affecting literacy education policies and practices.</li>
+                                    <li>Examine epistemic violence and epistemic equity as manifest in curricular content, pedagogies, and technologies and their consequences, particularly for marginalized groups.</li>
+                                    <li>Demonstrate the deployment of digital literacy and technologies to accelerate literacy learning</li>
+                                    <li>The impact of climate change,</li>
+                                    <li>Present emerging trends to mitigate low literacy learning outcomes through learner engagement</li>
+                                    <li>Critically examine language, literacy policies and practices in Africa and beyond</li>
+                                    <li>Present evidence-based policies and instructional practices for foundational literacy and the challenges for scaling including in areas affected by armed conflict and forcible displacement.</li>
+                                </ul>
+                                <h3>Conference Outcomes</h3>
+                                <p>The Conference is expected to bring new insights to the conceptualisation of literacies in the 21st century, as well as how new and emerging technologies can be leveraged for sustainable development. No doubt, the interactions will highlight what associations, institutions, development agencies, and governments can do to take Africa to the next level of sustainable development as envisioned in the Africa's 2063 Agenda of the Africa we want by using literacy as an instrument of empowerment. Ultimately, the organisers will compile and publish papers presented at the Conference for wider dissemination to open robust and sustained Pan Africa literacy dialogues in the years after the Conference.</p>
+                            </div>
+                            <button class="read-more-btn" onclick="toggleReadMore()">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab2" role="tabpanel">
+                        <div class="card card-body">
+                            <ol>
+                                <h2>SUB-THEMES</h2>
+                                <li>Innovative Approaches to Foundational Literacy</li>
+                                <div class="hidden-content">
+                                <li>Mother Tongue Education, Indigenous Knowledge Systems and Literacy Development</li>
+                                <li>Literacy and Language Policies in Africa</li>
+                                <li>Literacy, Equality, Diversity and Inclusion in Multilingual Context</li>
+                                <li>Literacy, Female Voices and the Future of Africa</li>
+                                <li>Artificial Intelligence and the Future of Literacy Development in Africa</li>
+                                <li>Innovative and Emerging Technologies, Teacher Empowerment, and Learner Engagement</li>
+                                <li>Libraries, Global Book Supply Chain, Material Development, and Intellectual Property Rights in the Context of Machine Learning</li>
+                                <li>Literacy Education for Refugees, IDPs, and Mobile Populations</li>
+                                <li>Literacy Evaluation, Assessment and Data Sovereignty</li>
+                                <li>Literacy and STEAM (Science, Technology, Engineering, Arts, and Mathematics Education.</li>
+                                <li>Multiple Literacies, Environmental Education and Sustainable Development Goals</li>
+                                <li>African Children's Literature and the Representations of Identities and Human Relations.</li>
+                            </ol>
+                          </div>
+                          <button class="read-more-btn" onclick="toggleReadMore()">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab3" role="tabpanel">
+                        <div class="card card-body">
+                            <ol>
+                                <h2>CALL FOR ABSTRACT</h2>
+                                <p>Abstracts are invited from participants that address any of the aspects of the subthemes.</p>
+                                <li>The abstract should include the objectives/questions addressed, methodology and/or approaches; key results/findings; significance/impact of the research/study; and three to five keywords pertinent to the abstract.</li>
+                                <li>The abstract should include the title, name(s) of author(s), institutional affiliation of the author(s), email address, and the sub-theme under which the presentation should be considered.</li>
+                                <li>Indicate the mode of presentation:<br>
+                                    a.) Individual Paper <br>
+                                    b.) Panel Presentation <br>
+                                    c.) Poster Presentation <br>
+                                    d.) Workshop Session <br>
+                                    e.) Exhibition <br>
+                                </li>
+                                <li>Completed abstracts, which should NOT be more than 250 words, should be submitted to: palfa2025@gmail.com or info@lipanonline.org</li>
+                            </ol>
+                            <ul>
+                                <h3 >Conference Presentations</h3>
+                                Presentations will include:<br>
+                                <li>Individual/Co-author(s) Presentation</li>
+                                <li>Poster Presentation</li>
+                                <li>Workshops</li>
+                                <li>Panel Presentation</li>
+                                <li>Special Sessions </li>
+                                <li>Exhibitions</li>
+                                <p style="color:red">Note: Presentations at the Conference will be both onsite and online.</p>
+                            </ul>
+                            <h3>Datelines for Abstract Submission and Response:</h3>
+                            (i.)Open: December 1, 2024<br>
+                            (ii.)Deadline: May 21, 2025<br>
+                            (iii.)Notification of Acceptance: June 30, 2025<br>
+                            <p style="color:red"> Send abstract to: palfa2025@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab4" role="tabpanel">
+                        <div class="card card-body">
+                          <section id="hotels-list">
+                            <h2>Hotels Around University of Lagos – PALFA Conference</h2>
+                            <style>
+                              #hotels-list {
+                                padding: 1em;
+                                font-family: Arial, sans-serif;
+                              }
+                          
+                              .hotel-card {
+                                border: 1px solid #ddd;
+                                border-radius: 8px;
+                                padding: 1em;
+                                margin-bottom: 1.5em;
+                                background-color: #fafafa;
+                                box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+                              }
+                          
+                              .hotel-card h3 {
+                                margin-top: 0;
+                                font-size: 1.2em;
+                                color: #333;
+                              }
+                          
+                              .hotel-detail {
+                                margin-bottom: 0.5em;
+                              }
+                          
+                              .hotel-label {
+                                font-weight: bold;
+                                color: #555;
+                              }
+                          
+                              .hotel-value a {
+                                color: #007BFF;
+                                text-decoration: none;
+                              }
+                          
+                              @media screen and (min-width: 768px) {
+                                .hotel-card {
+                                  display: grid;
+                                  grid-template-columns: 1fr 1fr;
+                                  column-gap: 2em;
+                                }
+                          
+                                .hotel-card h3 {
+                                  grid-column: 1 / -1;
+                                }
+                          
+                                .hotel-detail {
+                                  margin-bottom: 0.8em;
+                                }
+                              }
+                            </style>
+                          
+                            <!-- UNILAG Guest House -->
+                            <div class="hotel-card">
+                              <h3>UNILAG Guest House</h3>
+                              <div class="hotel-detail"><span class="hotel-label">Address:</span> University of Lagos</div>
+                              <div class="hotel-detail"><span class="hotel-label">Room Options:</span> ₦18,700 - ₦110,000</div>
+                              <div class="hotel-detail"><span class="hotel-label">Website:</span> <a href="mailto:reservations@unilagguesthouse.com">Email</a></div>
+                              <div class="hotel-detail"><span class="hotel-label">Phone Numbers:</span> +234-8142631511, +234-9135802663</div>
+                              <div class="hotel-detail"><span class="hotel-label">Distance from UNILAG:</span> Within Campus</div>
+                              <div class="hotel-detail"><span class="hotel-label">Booking Info:</span> Call to book</div>
+                            </div>
+                          
+                            <!-- NSPRI Guest House -->
+                            <div class="hotel-card">
+                              <h3>NSPRI Guest House</h3>
+                              <div class="hotel-detail"><span class="hotel-label">Address:</span> 32-38, Barikisu Iyede Street, Off University Road, Yaba</div>
+                              <div class="hotel-detail"><span class="hotel-label">Room Options:</span> ₦25,000 - ₦37,000</div>
+                              <div class="hotel-detail"><span class="hotel-label">Website:</span> <a href="https://nspriguesthouses.com/">Website</a></div>
+                              <div class="hotel-detail"><span class="hotel-label">Phone Numbers:</span> +234-8150482519, +234-8171223982</div>
+                              <div class="hotel-detail"><span class="hotel-label">Distance from UNILAG:</span> 700m (2 mins drive)</div>
+                              <div class="hotel-detail"><span class="hotel-label">Booking Info:</span> Call to book</div>
+                            </div>
+                          
+                            <!-- King Celia Hotels and Suites -->
+                            <div class="hotel-card">
+                              <h3>King Celia Hotels and Suites</h3>
+                              <div class="hotel-detail"><span class="hotel-label">Address:</span> 8, Jibowu St, Jibowu, Lagos</div>
+                              <div class="hotel-detail"><span class="hotel-label">Room Options:</span> ₦49,000 - ₦57,000</div>
+                              <div class="hotel-detail"><span class="hotel-label">Website:</span> <a href="https://kings-celia-hotel.lagos-hotels-ng.com/en/">Website</a></div>
+                              <div class="hotel-detail"><span class="hotel-label">Phone Numbers:</span> +234-8177774329</div>
+                              <div class="hotel-detail"><span class="hotel-label">Distance from UNILAG:</span> 2.7 km (8 mins drive)</div>
+                              <div class="hotel-detail"><span class="hotel-label">Booking Info:</span> Call to book</div>
+                            </div>
+                          
+                            <!-- Caritas Inn Yaba -->
+                            <div class="hotel-card">
+                              <h3>Caritas Inn, Yaba</h3>
+                              <div class="hotel-detail"><span class="hotel-label">Address:</span> 336, Herbert Macaulay Way, Sabo Yaba, Lagos</div>
+                              <div class="hotel-detail"><span class="hotel-label">Room Options:</span> ₦38,000 - ₦67,000</div>
+                              <div class="hotel-detail"><span class="hotel-label">Website:</span> <a href="https://caritasinnyabahotel.com/">Website</a></div>
+                              <div class="hotel-detail"><span class="hotel-label">Phone Numbers:</span> +234-9122649648</div>
+                              <div class="hotel-detail"><span class="hotel-label">Distance from UNILAG:</span> 1.6 km (4 mins drive)</div>
+                              <div class="hotel-detail"><span class="hotel-label">Booking Info:</span> Call to book</div>
+                            </div>
+                          
+                            <!-- Caritas Inn Igbobi -->
+                            <div class="hotel-card">
+                              <h3>Caritas Inn, Igbobi</h3>
+                              <div class="hotel-detail"><span class="hotel-label">Address:</span> WAEC Bus stop, Igbobi College Road, Yaba</div>
+                              <div class="hotel-detail"><span class="hotel-label">Room Options:</span> ₦38,000 - ₦67,000</div>
+                              <div class="hotel-detail"><span class="hotel-label">Website:</span> <a href="https://caritasinnyabahotel.com/">Website</a></div>
+                              <div class="hotel-detail"><span class="hotel-label">Phone Numbers:</span> +234-9023014325</div>
+                              <div class="hotel-detail"><span class="hotel-label">Distance from UNILAG:</span> 2.8 km (8 mins drive)</div>
+                              <div class="hotel-detail"><span class="hotel-label">Booking Info:</span> Call to book</div>
+                            </div>
+                          
+                            <!-- Lagoon Hotel & Suites -->
+                            <div class="hotel-card">
+                              <h3>Lagoon Hotel & Suites</h3>
+                              <div class="hotel-detail"><span class="hotel-label">Address:</span> 88, St Finbarr's College Rd, opposite Fidelity Bank, Akoka, Lagos</div>
+                              <div class="hotel-detail"><span class="hotel-label">Room Options:</span> ₦18,000 - ₦65,000</div>
+                              <div class="hotel-detail"><span class="hotel-label">Website:</span> <a href="https://www.tripadvisor.com/">TripAdvisor</a></div>
+                              <div class="hotel-detail"><span class="hotel-label">Phone Numbers:</span> +234-8173444888, +234-7033405546</div>
+                              <div class="hotel-detail"><span class="hotel-label">Distance from UNILAG:</span> 3.6 km (9 mins drive)</div>
+                              <div class="hotel-detail"><span class="hotel-label">Booking Info:</span> Call to book</div>
+                            </div>
+                          
+                            <!-- Sylva Link Hotel Ltd -->
+                            <div class="hotel-card">
+                              <h3>Sylva Link Hotel Ltd</h3>
+                              <div class="hotel-detail"><span class="hotel-label">Address:</span> 12, Asani St, Akoka, Lagos</div>
+                              <div class="hotel-detail"><span class="hotel-label">Room Options:</span> ₦20,300 - ₦28,800</div>
+                              <div class="hotel-detail"><span class="hotel-label">Website:</span> <a href="https://naijadirectory.org/listing/sylva-link-hotel/">Website</a></div>
+                              <div class="hotel-detail"><span class="hotel-label">Phone Numbers:</span> +234-8136951710</div>
+                              <div class="hotel-detail"><span class="hotel-label">Distance from UNILAG:</span> 3.3 km (8 mins drive)</div>
+                              <div class="hotel-detail"><span class="hotel-label">Booking Info:</span> Call to book</div>
+                            </div>
+                          
+                            <!-- Hadmof Inn -->
+                            <div class="hotel-card">
+                              <h3>Hadmof Inn Nigeria Limited</h3>
+                              <div class="hotel-detail"><span class="hotel-label">Address:</span> 21, Moore Rd off Herbert Macaulay Way Yaba, Lagos</div>
+                              <div class="hotel-detail"><span class="hotel-label">Room Options:</span> ₦25,000 - ₦50,000</div>
+                              <div class="hotel-detail"><span class="hotel-label">Website:</span> <a href="https://hotels.ng/hotel/44938-hadmof-inn-lagos">Website</a></div>
+                              <div class="hotel-detail"><span class="hotel-label">Phone Numbers:</span> +234-9095218685, +234-7066447152</div>
+                              <div class="hotel-detail"><span class="hotel-label">Distance from UNILAG:</span> 1.4 km (4 mins drive)</div>
+                              <div class="hotel-detail"><span class="hotel-label">Booking Info:</span> Call to book</div>
+                            </div>
+                          
+                            <!-- Wonderking Hotel -->
+                            <div class="hotel-card">
+                              <h3>Wonderking Hotel</h3>
+                              <div class="hotel-detail"><span class="hotel-label">Address:</span> 13, Lawani Street, Akoka, Yaba, Lagos</div>
+                              <div class="hotel-detail"><span class="hotel-label">Room Options:</span> ₦20,275 - ₦68,800</div>
+                              <div class="hotel-detail"><span class="hotel-label">Website:</span> —</div>
+                              <div class="hotel-detail"><span class="hotel-label">Phone Numbers:</span> +234-8033653919</div>
+                              <div class="hotel-detail"><span class="hotel-label">Distance from UNILAG:</span> 900 m (3 mins drive)</div>
+                              <div class="hotel-detail"><span class="hotel-label">Booking Info:</span> Call to book</div>
+                            </div>
+                          
+                            <!-- Other Hotels -->
+                            <div class="hotel-card">
+                              <h3>Other Hotels (TripAdvisor)</h3>
+                              <div class="hotel-detail"><span class="hotel-label">Address:</span> Clustered around Ikeja (~10 km to UNILAG)</div>
+                              <div class="hotel-detail"><span class="hotel-label">Room Options:</span> Varies</div>
+                              <div class="hotel-detail"><span class="hotel-label">Website:</span> <a href="https://www.tripadvisor.com/">TripAdvisor</a></div>
+                              <div class="hotel-detail"><span class="hotel-label">Phone Numbers:</span> —</div>
+                              <div class="hotel-detail"><span class="hotel-label">Distance from UNILAG:</span> ~20 mins drive</div>
+                              <div class="hotel-detail"><span class="hotel-label">Booking Info:</span> Book via TripAdvisor</div>
+                            </div>
+                          
+                          </section>
+                          
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab5" role="tabpanel">
+                        <div class="card card-body">
+                          <section id="palfa-registration">
+                            <h2>14th Pan African Literacy for All (PALFA) Conference Registration Form</h2>
+                            <p><strong>📅</strong> October 13–17, 2025<br>
+                               <strong>📍</strong> Faculty of Social Science (TETFUND) Lecture Theatre, University of Lagos, Nigeria
+                            </p>
+                            <p>Thank you for your interest in participating in the 14th PALFA Conference. Please complete this form to register. Further information will be sent to your email after submission.</p>
+                          
+                            <form>
+                              <!-- Section A -->
+                              <fieldset>
+                                <legend><strong>Section A: Participant Information</strong></legend>
+                                <label>Full Name*<br><input type="text" name="full_name" required></label><br>
+                                <label>Title/Position<br><input type="text" name="title"></label><br>
+                                <label>Organization/Institution<br><input type="text" name="organization"></label><br>
+                                <label>State*<br><input type="text" name="state" required></label><br>
+                                <label>Country<br><input type="text" name="country"></label><br>
+                                <label>Email Address*<br><input type="email" name="email" required></label><br>
+                                <label>Phone/WhatsApp Number<br><input type="tel" name="phone"></label><br>
+                                <label>Preferred Mode of Participation:<br>
+                                  <input type="radio" name="mode" value="Physical"> Physical<br>
+                                  <input type="radio" name="mode" value="Virtual"> Virtual
+                                </label>
+                              </fieldset>
+                          
+                              <!-- Section B -->
+                              <fieldset>
+                                <legend><strong>Section B: Category of Participation</strong></legend>
+                                <label>Select your participation category:<br>
+                                  <input type="radio" name="category" value="Presenter"> Presenter<br>
+                                  <input type="radio" name="category" value="Participant/Observer"> Participant/Observer<br>
+                                  <input type="radio" name="category" value="Exhibitor"> Exhibitor<br>
+                                  <input type="radio" name="category" value="Sponsor"> Sponsor<br>
+                                  <input type="radio" name="category" value="Student/Youth Delegate"> Student/Youth Delegate
+                                </label>
+                              </fieldset>
+                          
+                              <!-- Section C -->
+                              <fieldset>
+                                <legend><strong>Section C: Registration Fees</strong></legend>
+                                <p><strong>Local Participants:</strong><br>
+                                – ₦30,000 (LiPAN member)<br>
+                                – ₦40,000 (Non-members)</p>
+                          
+                                <p><strong>International Participants:</strong><br>
+                                – $100 (Africa)<br>
+                                – $150 (Others)</p>
+                          
+                                <p><strong>Students (with ID):</strong><br>
+                                – ₦20,000<br>
+                                – $20</p>
+                          
+                                <p><strong>Virtual Participation (Not making a presentation):</strong><br>
+                                – ₦20,000<br>
+                                – $50 (Africa)<br>
+                                – $100 (Others)</p>
+                          
+                                <label>How will you pay your registration fee?<br>
+                                  <select name="payment_option">
+                                    <option>Local (Nigeria) – Early</option>
+                                    <option>Local – Regular</option>
+                                    <option>Local – On-site</option>
+                                    <option>International – Early</option>
+                                    <option>International – Regular</option>
+                                    <option>International – On-site</option>
+                                    <option>Student</option>
+                                    <option>Virtual</option>
+                                    <option>Not Applicable (Sponsor, etc.)</option>
+                                  </select>
+                                </label><br><br>
+                          
+                                <label>Would you like to receive bank/payment details now?<br>
+                                  <input type="radio" name="payment_info" value="Yes"> Yes<br>
+                                  <input type="radio" name="payment_info" value="No"> No
+                                </label>
+                              </fieldset>
+                          
+                              <!-- Section D -->
+                              <fieldset>
+                                <legend><strong>Section D: Presentation Information (If applicable)</strong></legend>
+                                <label>Title of Paper/Presentation<br><input type="text" name="paper_title"></label><br>
+                                <label>Thematic Area<br><input type="text" name="thematic_area"></label><br>
+                                <label>Co-authors (if any)<br><input type="text" name="coauthors"></label><br>
+                          
+                                <label>Type of Presentation:<br>
+                                  <input type="checkbox" name="presentation_type" value="Individual"> Individual/Co-author(s) Presentation<br>
+                                  <input type="checkbox" name="presentation_type" value="Poster"> Poster Presentation<br>
+                                  <input type="checkbox" name="presentation_type" value="Workshop"> Workshop<br>
+                                  <input type="checkbox" name="presentation_type" value="Panel"> Panel Presentation<br>
+                                  <input type="checkbox" name="presentation_type" value="Special"> Special Sessions<br>
+                                  <input type="checkbox" name="presentation_type" value="Exhibition"> Exhibitions
+                                </label>
+                              </fieldset>
+                          
+                              <!-- Section E -->
+                              <fieldset>
+                                <legend><strong>Section E: Consent & Submission</strong></legend>
+                                <label><input type="checkbox" name="consent" required> I confirm that the information provided is accurate and agree to abide by the conference guidelines.</label><br><br>
+                                <button type="submit">Submit Registration</button>
+                              </fieldset>
+                            </form>
+                          
+                            <p><em>“Thank you for registering for the 14th PALFA Conference. A confirmation email will be sent shortly. If you have any inquiries, please contact [insert email or phone number].”</em></p>
+                          </section>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function toggleReadMore() {
+            const hiddenContent = document.querySelector('.hidden-content');
+            const readMoreBtn = document.querySelector('.read-more-btn');
+
+            if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') {
+                hiddenContent.style.display = 'block';
+                readMoreBtn.textContent = 'Read Less';
+            } else {
+                hiddenContent.style.display = 'none';
+                readMoreBtn.textContent = 'Read More';
+            }
+        }
+    </script>
+
+</body>
+</html>
