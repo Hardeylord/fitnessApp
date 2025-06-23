@@ -66,12 +66,12 @@
 
     <!-- mobile -->
      <div id="mainMenu" class="hidden md:hidden justify-center w-96 h-80 absolute px-5 py-1 mx-auto bg-white/50 backdrop-blur-md rounded-xl top-56 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <ul class="flex flex-col justify-around text-black">
-          <li><link rel="stylesheet" href="">Home</li>
-          <li><link rel="stylesheet" href="">Features</li>
-          <li><link rel="stylesheet" href="">About Us</li>
-          <li><link rel="stylesheet" href="">Trainers</li>
-          <li><link rel="stylesheet" href="">Testimonials</li>
+        <ul class="flex flex-col justify-around text-black cursor-pointer">
+          <li class="hover:text-white"><link rel="stylesheet" href="">Home</li>
+          <li class="hover:text-white"><link rel="stylesheet" href="">Features</li>
+          <li class="hover:text-white"><link rel="stylesheet" href="">About Us</li>
+          <li class="hover:text-white"><link rel="stylesheet" href="">Trainers</li>
+          <li class="hover:text-white"><link rel="stylesheet" href="">Testimonials</li>
         </ul>
      </div>
   </section>
@@ -302,7 +302,7 @@
             <!-- right side -->
             <div class="w-96 flex items-center h-40 bg-[#656565]/30 backdrop-blur-md rounded-lg p-2 px-4 space-x-4">
                 <div class="h-auto w-[170px] flex relative">
-                  <img class="rounded-lg bg-cover bg-center" src="/yoga/close-up-kid-meditating-mat.jpg" alt="" srcset=""> 
+                  <img class="rounded-lg bg-cover bg-center" src="/yoga/close-up-kid-meditating-mat.jpg"> 
                   <img class="h-7 w-7 cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="yoga/play.png" alt="">
                   <!--   -->
                 </div>
@@ -318,12 +318,12 @@
 
       <section id="instructor">
         <!-- instructor section -->
-        <div class="w-full flex justify-center space-y-9 items-center flex-col md:flex-col px-16 pt-16 md:space-x-10 mt-14">
-          <div class="flex justify-between w-full">
+        <div class="w-full flex justify-center space-y-9 items-center flex-col md:flex-col px-16 pt-16 md:space-x-10 mt-7 md:mt-14">
+          <div class="flex flex-col md:flex-row justify-between w-full">
             <!-- headiing and paragraph -->
-            <div class="w-1/2"><h1 class="text-center md:text-left text-5xl text-gray-700 font-bold">Meet Expert instructor</h1></div>
-            <div class="w-1/2 flex justify-end">
-              <p class="text-gray-700 text-left">it's a way of life. Whether you're a beginner or an experienced <br> yogi, our welcoming community is here to support.</p>
+            <div class="md:w-1/2"><h1 class="text-center text-3xl md:text-left md:text-5xl text-gray-700 font-bold">Meet Expert instructor</h1></div>
+            <div class="md:w-1/2 flex md:justify-end">
+              <p class="text-gray-700 text-center md:text-left">it's a way of life. Whether you're a beginner or an experienced <br> yogi, our welcoming community is here to support.</p>
             </div>
           </div>
           <!-- flexbox -->
@@ -331,8 +331,12 @@
             <!-- card1 -->
           <div style="background-image: url(yoga/madison-lavern-4gcqRf3-f2I-unsplash.jpg);" class="flex md:mt-[18px] flex-col h-[400px] justify-between md:w-1/3 md:h-full bg-cover bg-center rounded-3xl">
             <!-- blur circle -->
-             <div class="flex justify-end p-2">
-              <div class="cursor-pointer rounded-full flex items-center justify-center text-white w-12 h-12 bg-[#7c7c7c]/30 backdrop-blur-2xl"><img src="teenyicons_arrow-solid.svg"></i>
+            <div class="flex justify-end items-end space-y-1 p-2 flex-col">
+              <div class="cursor-pointer rounded-full flex items-center justify-center text-white size-8 bg-[#7c7c7c]/30 backdrop-blur-2xl"><img class="size-3" src="social-icon/twitter.png"></i>
+              </div>
+              <div class="cursor-pointer rounded-full flex items-center justify-center text-white size-8 bg-[#7c7c7c]/30 backdrop-blur-2xl"><img class="size-3" src="social-icon/spotify.png"></i>
+              </div>
+              <div class="cursor-pointer rounded-full flex items-center justify-center text-white size-8 bg-[#7c7c7c]/30 backdrop-blur-2xl"><img class="size-3" src="social-icon/linkedin.png"></i>
               </div>
              </div>
             <div class="bg-white/30 backdrop-blur-2xl px-5 pb-5 rounded-b-3xl">
@@ -361,8 +365,12 @@
           <!-- card3 -->
           <div style="background-image: url(social-icon/medium-shot-woman-doing-sport-home.jpg);" class="flex md:mt-[18px] flex-col h-[400px] justify-between md:w-1/3 md:h-full  bg-cover bg-center rounded-3xl">
             <!-- blur circle -->
-             <div class="flex justify-end p-2">
-              <div class="cursor-pointer rounded-full flex items-center justify-center text-white w-12 h-12 bg-[#7c7c7c]/30 backdrop-blur-2xl"><img src="teenyicons_arrow-solid.svg"></i>
+            <div class="flex justify-end items-end space-y-1 p-2 flex-col">
+              <div class="cursor-pointer rounded-full flex items-center justify-center text-white size-8 bg-[#7c7c7c]/30 backdrop-blur-2xl"><img class="size-3" src="social-icon/twitter.png"></i>
+              </div>
+              <div class="cursor-pointer rounded-full flex items-center justify-center text-white size-8 bg-[#7c7c7c]/30 backdrop-blur-2xl"><img class="size-3" src="social-icon/spotify.png"></i>
+              </div>
+              <div class="cursor-pointer rounded-full flex items-center justify-center text-white size-8 bg-[#7c7c7c]/30 backdrop-blur-2xl"><img class="size-3" src="social-icon/linkedin.png"></i>
               </div>
              </div>
             <div class="bg-white/30 backdrop-blur-2xl px-5 pb-5 rounded-b-3xl">
@@ -379,7 +387,14 @@
         const menuBar=document.getElementById("menuBar");
         const mainMenu=document.getElementById("mainMenu");
         menuBar.addEventListener("click", function (params) {
-          mainMenu.classList.toggle('hidden')
+          // mainMenu.classList.toggle('block')
+          if (mainMenu.classList.contains('hidden')) {
+  mainMenu.classList.remove('hidden');
+  mainMenu.classList.add('flex');
+} else {
+  mainMenu.classList.remove('flex');
+  mainMenu.classList.add('hidden');
+}
         })
       </script>
 </body>

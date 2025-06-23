@@ -719,6 +719,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -747,11 +751,6 @@ video {
 .size-8 {
   width: 2rem;
   height: 2rem;
-}
-
-.size-4 {
-  width: 1rem;
-  height: 1rem;
 }
 
 .h-10 {
@@ -989,6 +988,12 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1023,12 +1028,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
-}
-
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1162,22 +1161,6 @@ video {
 
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
-}
-
-.bg-\[url\(\/beautiful-girls-are-playing-yoga-park\.jpg\)\] {
-  background-image: url(/beautiful-girls-are-playing-yoga-park.jpg);
-}
-
-.bg-\[url\(\/yoga\/dane-wetton-AkSJQnem75Y-unsplash\.jpg\)\] {
-  background-image: url(/yoga/dane-wetton-AkSJQnem75Y-unsplash.jpg);
-}
-
-.bg-\[url\(\/yoga\/dane-wetton-t1NEMSm1rgI-unsplash\.jpg\)\] {
-  background-image: url(/yoga/dane-wetton-t1NEMSm1rgI-unsplash.jpg);
-}
-
-.bg-\[url\(\/yoga\/fitness-woman-doing-yoga-yoga-mat-home\.jpg\)\] {
-  background-image: url(/yoga/fitness-woman-doing-yoga-yoga-mat-home.jpg);
 }
 
 .bg-\[url\(\/yoga\/madison-lavern-4gcqRf3-f2I-unsplash\.jpg\)\] {
@@ -1316,20 +1299,8 @@ video {
   padding-top: 2rem;
 }
 
-.text-left {
-  text-align: left;
-}
-
 .text-center {
   text-align: center;
-}
-
-.text-end {
-  text-align: end;
-}
-
-.align-baseline {
-  vertical-align: baseline;
 }
 
 .text-2xl {
@@ -1529,6 +1500,11 @@ video {
   color: rgb(249 115 22 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 .hover\:opacity-80:hover {
   opacity: 0.8;
 }
@@ -1541,6 +1517,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
   .md\:mt-\[18px\] {
     margin-top: 18px;
   }
