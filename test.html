@@ -29,7 +29,8 @@
         justify-content: center;
         background-color: #374151;
         border-radius: 0.75rem;
-        box-shadow: 0 0 8px rgba(255, 255, 255, 0.1), 0 0 15px rgba(255, 255, 255, 0.05);
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.1),
+          0 0 15px rgba(255, 255, 255, 0.05);
         position: absolute;
         z-index: 30;
         transition: transform 0.2s ease-out;
@@ -40,16 +41,17 @@
       }
 
       @keyframes central-glow {
-        0%, 100% {
+        0%,
+        100% {
           box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6),
-                      0 0 20px 8px rgba(255, 255, 255, 0.4),
-                      0 0 40px 15px rgba(255, 255, 255, 0.2);
+            0 0 20px 8px rgba(255, 255, 255, 0.4),
+            0 0 40px 15px rgba(255, 255, 255, 0.2);
           transform: scale(1);
         }
         50% {
           box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8),
-                      0 0 30px 12px rgba(255, 255, 255, 0.6),
-                      0 0 60px 20px rgba(255, 255, 255, 0.3);
+            0 0 30px 12px rgba(255, 255, 255, 0.6),
+            0 0 60px 20px rgba(255, 255, 255, 0.3);
           transform: scale(1.05);
         }
       }
@@ -66,54 +68,148 @@
       }
     </style>
   </head>
-  <body class="bg-black h-screen flex items-center justify-center overflow-hidden">
+  <body
+    class="bg-black h-screen flex items-center justify-center overflow-hidden"
+  >
     <div class="canvas-wrapper">
       <!-- Central tech node (replacing 😋) -->
-      <div class="tech-container center-tech-glow" style="left: 480px; top: 352px;">
+      <div
+        class="tech-container center-tech-glow"
+        style="left: 480px; top: 352px"
+      >
         <svg class="tech-icon" viewBox="0 0 40 40">
-          <circle cx="20" cy="20" r="15" fill="none" stroke="#ffffff" stroke-width="2" />
-          <circle cx="20" cy="20" r="10" fill="none" stroke="#ffffff" stroke-width="1.5" />
+          <circle
+            cx="20"
+            cy="20"
+            r="15"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="2"
+          />
+          <circle
+            cx="20"
+            cy="20"
+            r="10"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="1.5"
+          />
           <circle cx="20" cy="20" r="5" fill="#ffffff" />
         </svg>
       </div>
 
       <!-- Left side tech elements -->
-      <div class="tech-container" style="left: 100px; top: 210px;">
+      <div class="tech-container" style="left: 100px; top: 210px">
         <svg class="tech-icon" viewBox="0 0 40 40">
-          <path d="M10 20 H30 M20 10 V30" stroke="#00ffff" stroke-width="3" stroke-linecap="round" />
-          <circle cx="20" cy="20" r="8" fill="none" stroke="#00ffff" stroke-width="2" />
+          <path
+            d="M10 20 H30 M20 10 V30"
+            stroke="#00ffff"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <circle
+            cx="20"
+            cy="20"
+            r="8"
+            fill="none"
+            stroke="#00ffff"
+            stroke-width="2"
+          />
         </svg>
       </div>
-      <div class="tech-container" style="left: 100px; top: 334px;">
+      <div class="tech-container" style="left: 100px; top: 334px">
         <svg class="tech-icon" viewBox="0 0 40 40">
-          <rect x="12" y="12" width="16" height="16" fill="none" stroke="#ff00ff" stroke-width="2" rx="3" />
+          <rect
+            x="12"
+            y="12"
+            width="16"
+            height="16"
+            fill="none"
+            stroke="#ff00ff"
+            stroke-width="2"
+            rx="3"
+          />
           <circle cx="20" cy="20" r="4" fill="#ff00ff" />
         </svg>
       </div>
-      <div class="tech-container" style="left: 100px; top: 454px;">
+      <div class="tech-container" style="left: 100px; top: 454px">
         <svg class="tech-icon" viewBox="0 0 40 40">
-          <path d="M15 15 L25 25 M25 15 L15 25" stroke="#04f7c7" stroke-width="2" stroke-linecap="round" />
-          <circle cx="20" cy="20" r="10" fill="none" stroke="#04f7c7" stroke-width="2" />
+          <path
+            d="M15 15 L25 25 M25 15 L15 25"
+            stroke="#04f7c7"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <circle
+            cx="20"
+            cy="20"
+            r="10"
+            fill="none"
+            stroke="#04f7c7"
+            stroke-width="2"
+          />
         </svg>
       </div>
 
       <!-- Right side tech elements (mirrored) -->
-      <div class="tech-container" style="left: 892px; top: 210px; transform: scaleX(-1);">
+      <div
+        class="tech-container"
+        style="left: 892px; top: 210px; transform: scaleX(-1)"
+      >
         <svg class="tech-icon" viewBox="0 0 40 40">
-          <path d="M10 20 H30 M20 10 V30" stroke="#00ffff" stroke-width="3" stroke-linecap="round" />
-          <circle cx="20" cy="20" r="8" fill="none" stroke="#00ffff" stroke-width="2" />
+          <path
+            d="M10 20 H30 M20 10 V30"
+            stroke="#00ffff"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <circle
+            cx="20"
+            cy="20"
+            r="8"
+            fill="none"
+            stroke="#00ffff"
+            stroke-width="2"
+          />
         </svg>
       </div>
-      <div class="tech-container" style="left: 892px; top: 334px; transform: scaleX(-1);">
+      <div
+        class="tech-container"
+        style="left: 892px; top: 334px; transform: scaleX(-1)"
+      >
         <svg class="tech-icon" viewBox="0 0 40 40">
-          <rect x="12" y="12" width="16" height="16" fill="none" stroke="#ff00ff" stroke-width="2" rx="3" />
+          <rect
+            x="12"
+            y="12"
+            width="16"
+            height="16"
+            fill="none"
+            stroke="#ff00ff"
+            stroke-width="2"
+            rx="3"
+          />
           <circle cx="20" cy="20" r="4" fill="#ff00ff" />
         </svg>
       </div>
-      <div class="tech-container" style="left: 892px; top: 454px; transform: scaleX(-1);">
+      <div
+        class="tech-container"
+        style="left: 892px; top: 454px; transform: scaleX(-1)"
+      >
         <svg class="tech-icon" viewBox="0 0 40 40">
-          <path d="M15 15 L25 25 M25 15 L15 25" stroke="#04f7c7" stroke-width="2" stroke-linecap="round" />
-          <circle cx="20" cy="20" r="10" fill="none" stroke="#04f7c7" stroke-width="2" />
+          <path
+            d="M15 15 L25 25 M25 15 L15 25"
+            stroke="#04f7c7"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <circle
+            cx="20"
+            cy="20"
+            r="10"
+            fill="none"
+            stroke="#04f7c7"
+            stroke-width="2"
+          />
         </svg>
       </div>
 
@@ -152,29 +248,125 @@
           </linearGradient>
         </defs>
 
-        <path id="path1" class="flow-path" d="M 132 244 C 300 244, 400 384, 512 384" />
-        <path id="path2" class="flow-path" d="M 132 364 C 300 364, 400 384, 512 384" />
-        <path id="path3" class="flow-path" d="M 132 484 C 300 484, 400 384, 512 384" />
+        <path
+          id="path1"
+          class="flow-path"
+          d="M 132 244 C 300 244, 400 384, 512 384"
+        />
+        <path
+          id="path2"
+          class="flow-path"
+          d="M 132 364 C 300 364, 400 384, 512 384"
+        />
+        <path
+          id="path3"
+          class="flow-path"
+          d="M 132 484 C 300 484, 400 384, 512 384"
+        />
 
-        <path id="path4" class="flow-path" d="M 892 244 C 724 244, 624 384, 512 384" />
-        <path id="path5" class="flow-path" d="M 892 364 C 724 364, 624 384, 512 384" />
-        <path id="path6" class="flow-path" d="M 892 484 C 724 484, 624 384, 512 384" />
+        <path
+          id="path4"
+          class="flow-path"
+          d="M 892 244 C 724 244, 624 384, 512 384"
+        />
+        <path
+          id="path5"
+          class="flow-path"
+          d="M 892 364 C 724 364, 624 384, 512 384"
+        />
+        <path
+          id="path6"
+          class="flow-path"
+          d="M 892 484 C 724 484, 624 384, 512 384"
+        />
 
-        <mask id="mask1"><circle r="25" fill="white"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#path1" /></animateMotion></circle></mask>
-        <mask id="mask2"><circle r="25" fill="white"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#path2" /></animateMotion></circle></mask>
-        <mask id="mask3"><circle r="25" fill="white"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#path3" /></animateMotion></circle></mask>
+        <mask id="mask1">
+          <circle r="25" fill="white">
+            <animateMotion dur="2s" repeatCount="indefinite">
+              <mpath href="#path1" />
+            </animateMotion>
+          </circle>
+        </mask>
+        <mask id="mask2">
+          <circle r="25" fill="white">
+            <animateMotion dur="2s" repeatCount="indefinite">
+              <mpath href="#path2" />
+            </animateMotion>
+          </circle>
+        </mask>
+        <mask id="mask3">
+          <circle r="25" fill="white">
+            <animateMotion dur="2s" repeatCount="indefinite">
+              <mpath href="#path3" />
+            </animateMotion>
+          </circle>
+        </mask>
 
-        <mask id="mask4"><circle r="25" fill="white"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#path4" /></animateMotion></circle></mask>
-        <mask id="mask5"><circle r="25" fill="white"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#path5" /></animateMotion></circle></mask>
-        <mask id="mask6"><circle r="25" fill="white"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#path6" /></animateMotion></circle></mask>
+        <mask id="mask4">
+          <circle r="25" fill="white">
+            <animateMotion dur="2s" repeatCount="indefinite">
+              <mpath href="#path4" />
+            </animateMotion>
+          </circle>
+        </mask>
+        <mask id="mask5">
+          <circle r="25" fill="white">
+            <animateMotion dur="2s" repeatCount="indefinite">
+              <mpath href="#path5" />
+            </animateMotion>
+          </circle>
+        </mask>
+        <mask id="mask6">
+          <circle r="25" fill="white">
+            <animateMotion dur="2s" repeatCount="indefinite">
+              <mpath href="#path6" />
+            </animateMotion>
+          </circle>
+        </mask>
 
-        <path d="M 132 244 C 300 244, 400 384, 512 384" class="beam" stroke="url(#topGlowLtoC)" style="filter: drop-shadow(0 0 8px #2504ae);" mask="url(#mask1)" />
-        <path d="M 132 364 C 300 364, 400 384, 512 384" class="beam" stroke="url(#middleGlowLtoC)" style="filter: drop-shadow(0 0 8px #d70000);" mask="url(#mask2)" />
-        <path d="M 132 484 C 300 484, 400 384, 512 384" class="beam" stroke="url(#bottomGlowLtoC)" style="filter: drop-shadow(0 0 8px #ff00ff);" mask="url(#mask3)" />
+        <path
+          d="M 132 244 C 300 244, 400 384, 512 384"
+          class="beam"
+          stroke="url(#topGlowLtoC)"
+          style="filter: drop-shadow(0 0 8px #2504ae)"
+          mask="url(#mask1)"
+        />
+        <path
+          d="M 132 364 C 300 364, 400 384, 512 384"
+          class="beam"
+          stroke="url(#middleGlowLtoC)"
+          style="filter: drop-shadow(0 0 8px #d70000)"
+          mask="url(#mask2)"
+        />
+        <path
+          d="M 132 484 C 300 484, 400 384, 512 384"
+          class="beam"
+          stroke="url(#bottomGlowLtoC)"
+          style="filter: drop-shadow(0 0 8px #ff00ff)"
+          mask="url(#mask3)"
+        />
 
-        <path d="M 892 244 C 724 244, 624 384, 512 384" class="beam" stroke="url(#topGlowRtoC)" style="filter: drop-shadow(0 0 8px #00ffff);" mask="url(#mask4)" />
-        <path d="M 892 364 C 724 364, 624 384, 512 384" class="beam" stroke="url(#middleGlowRtoC)" style="filter: drop-shadow(0 0 8px #f59e0b);" mask="url(#mask5)" />
-        <path d="M 892 484 C 724 484, 624 384, 512 384" class="beam" stroke="url(#bottomGlowRtoC)" style="filter: drop-shadow(0 0 8px #04f7c7);" mask="url(#mask6)" />
+        <path
+          d="M 892 244 C 724 244, 624 384, 512 384"
+          class="beam"
+          stroke="url(#topGlowRtoC)"
+          style="filter: drop-shadow(0 0 8px #00ffff)"
+          mask="url(#mask4)"
+        />
+        <path
+          d="M 892 364 C 724 364, 624 384, 512 384"
+          class="beam"
+          stroke="url(#middleGlowRtoC)"
+          style="filter: drop-shadow(0 0 8px #f59e0b)"
+          mask="url(#mask5)"
+        />
+        <path
+          d="M 892 484 C 724 484, 624 384, 512 384"
+          class="beam"
+          stroke="url(#bottomGlowRtoC)"
+          style="filter: drop-shadow(0 0 8px #04f7c7)"
+          mask="url(#mask6)"
+        />
       </svg>
     </div>
   </body>

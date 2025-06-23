@@ -1,108 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class="bg-color-primary tracking-wider text-white">
-  <header>
-    <nav class="container flex justify-between items-center">
-      <div class="py-5 text-orange-500 font-bold text-3xl">
-        <a href="http://"><span class="text-white">Light</span>Code.</a>
-      </div>
-      <div>
-        <ul class="hidden md:flex items-center space-x-6">
-          <li><a href="fitness.html" class="hover:text-orange-500">Home</a></li>
-          <li><a href="fitness.html" class="hover:text-orange-500">Fitness</a></li>
-          <li><a href="" class="hover:text-orange-500">Testimonial</a></li>
-          <li><a href="" class="hover:text-orange-500">Pricing</a></li>
-          <li><a href="fitness.html" class="hover:text-orange-500">Fitness</a></li>
-          <li><a href="" class="hover:text-orange-500">Contact</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-color-primary tracking-wider text-white">
+    <header>
+      <nav class="container flex justify-between items-center">
+        <div class="py-5 text-orange-500 font-bold text-3xl">
+          <a href="http://"><span class="text-white">Light</span>Code.</a>
+        </div>
+        <div>
+          <ul class="hidden md:flex items-center space-x-6">
+            <li>
+              <a href="fitness.html" class="hover:text-orange-500">Home</a>
+            </li>
+            <li>
+              <a href="fitness.html" class="hover:text-orange-500">Fitness</a>
+            </li>
+            <li><a href="" class="hover:text-orange-500">Testimonial</a></li>
+            <li><a href="" class="hover:text-orange-500">Pricing</a></li>
+            <li>
+              <a href="fitness.html" class="hover:text-orange-500">Fitness</a>
+            </li>
+            <li><a href="" class="hover:text-orange-500">Contact</a></li>
 
-          <li><button class="btn">Free Trial</button></li>
-        </ul>
-      </div>
-      <!-- mobile screen -->
-       <div id="hamburger" class="lg:hidden cursor-pointer z-50">
-        <i class="class fa-solid fa-bars"></i>
-       </div>
-       <div id="menu" class="hidden bg-color-primary h-[100vh] absolute inset-0 z-50">
-        <ul class="h-full grid place-items-center py-20">
-          <li><a id="link" href="index.html" class="hover:text-orange-500">Fitness App</a></li>
-          <li><a href="" class="hover:text-orange-500">Features</a></li>
-          <li><a href="" class="hover:text-orange-500">Testimonial</a></li>
-          <li><a href="" class="hover:text-orange-500">Pricing</a></li>
-          <li><a href="" class="hover:text-orange-500">Blog</a></li>
-          <li><a href="" class="hover:text-orange-500">Contact</a></li>
+            <li><button class="btn">Free Trial</button></li>
+          </ul>
+        </div>
+        <!-- mobile screen -->
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+          <i class="class fa-solid fa-bars"></i>
+        </div>
+        <div
+          id="menu"
+          class="hidden bg-color-primary h-[100vh] absolute inset-0 z-50"
+        >
+          <ul class="h-full grid place-items-center py-20">
+            <li>
+              <a id="link" href="index.html" class="hover:text-orange-500"
+                >Fitness App</a
+              >
+            </li>
+            <li><a href="" class="hover:text-orange-500">Features</a></li>
+            <li><a href="" class="hover:text-orange-500">Testimonial</a></li>
+            <li><a href="" class="hover:text-orange-500">Pricing</a></li>
+            <li><a href="" class="hover:text-orange-500">Blog</a></li>
+            <li><a href="" class="hover:text-orange-500">Contact</a></li>
 
-          <li><button class="btn">Free Trial</button></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+            <li><button class="btn">Free Trial</button></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  <!-- hero section -->
-  <main>
-    <section id="home" class="relative">
-      <div class="w-80 h-80 bg-fuchsia-600 absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-      <div class="w-80 h-80 bg-orange-600 absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+    <!-- hero section -->
+    <main>
+      <section id="home" class="relative">
+        <div
+          class="w-80 h-80 bg-fuchsia-600 absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <div
+          class="w-80 h-80 bg-orange-600 absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <div class="container py-20">
+          <div class="flex flex-col items-center z-20 md:flex-row">
+            <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+              <h1 class="title">Awesome App for your financial use.</h1>
+              <p class="leading-relaxed mb-10">
+                This should be used to tell a story and let your users know a
+                little more about your app and its use. How can benefit them.
+              </p>
+              <button
+                class="bg-orange-500 px-9 py-3 rounded-full capitalize font-bold hover:opacity-80 ease-in duration-200"
+              >
+                Downoad App
+              </button>
+            </div>
+            <div class="md:w-1/2">
+              <img src="img/hero4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- features -->
+    <section id="features" class="bg-color-primary">
       <div class="container py-20">
-        <div class="flex flex-col items-center z-20 md:flex-row">
-        <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
-          <h1 class="title">Awesome App for your financial use.</h1>
-          <p class="leading-relaxed mb-10">This should be used to tell a story and let your users know a little more about your app and its use. How can benefit them.</p>
-          <button class="bg-orange-500 px-9 py-3 rounded-full capitalize font-bold hover:opacity-80 ease-in duration-200">Downoad App</button>
+        <div class="text-center mb-20 m-auto md:w-1/2">
+          <h4>Our feature</h4>
+          <h1>Easy to manage all your payments by our app</h1>
         </div>
-        <div class="md:w-1/2">
-          <img src="img/hero4.png" alt="">
+
+        <div
+          class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 lg:px-8 sm:px-6"
+        >
+          <!-- card 1 -->
+          <div
+            class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200"
+          >
+            <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+              <i class="fa-solid fa-calendar-days text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold py-4">Expense Tracking</h3>
+            <p class="leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+              distinctio animi deleniti, deserunt eveniet eius quibusdam.
+            </p>
+          </div>
+          <div class="border-2 border-solid border-color-gray">2</div>
+          <div class="border-2 border-solid border-color-gray">3</div>
         </div>
-      </div>
       </div>
     </section>
-  </main>
 
-  <!-- features -->
-   <section id="features" class="bg-color-primary">
-    <div class="container py-20">
-      <div class="text-center mb-20 m-auto md:w-1/2">
-        <h4>Our feature</h4>
-        <h1>Easy to manage all your payments by our app</h1>
-      </div>
+    <div class="h-24 w-24 bg-white backdrop-blur-md bg-opacity-30"></div>
 
-      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 lg:px-8 sm:px-6">
-        <!-- card 1 -->
-        <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
-          <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
-            <i class="fa-solid fa-calendar-days text-4xl"></i>
-          </div>
-          <h3 class="text-xl font-bold py-4">Expense Tracking</h3>
-          <p class="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit distinctio animi deleniti, deserunt eveniet eius quibusdam.</p>
-        </div>
-        <div class="border-2 border-solid border-color-gray">2</div>
-        <div class="border-2 border-solid border-color-gray">3</div>
-      </div>
+    <script>
+      // mobile menu
+      const hamburger = document.querySelector("#hamburger");
+      const menu = document.querySelector("#menu");
+      const fasolid = document.querySelector(".fa-solid");
 
-    </div>
-   </section>
-
-   <div class="h-24 w-24 bg-white backdrop-blur-md bg-opacity-30">
-
-   </div>
-
-  <script>
-    // mobile menu
-    const hamburger = document.querySelector('#hamburger')
-    const menu=document.querySelector('#menu');
-    const fasolid=document.querySelector('.fa-solid');
-
-    hamburger.addEventListener("click", function () {
-      menu.classList.toggle('hidden');
-      fasolid.classList.toggle('fa-xmark')
-    })
-
-  </script>
-</body>
+      hamburger.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+        fasolid.classList.toggle("fa-xmark");
+      });
+    </script>
+  </body>
 </html>
