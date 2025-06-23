@@ -236,10 +236,6 @@
         <div style="background-image: url(yoga/fitness-woman-doing-yoga-yoga-mat-home.jpg);" class="flex w-full p-5 h-[400px] justify-end items-end  md:w-1/2 rounded-3xl bg-cover bg-center">
           <div class="w-48 h-32 bg-[#656565]/30 backdrop-blur-md rounded-lg p-4">
             <h1 class="text-white text-xl">View Patient<br>Stories</h1>
-            <!-- <div class="flex justify-between">
-              <img class="h-12 w-12" src="yoga/healthicons_heartbeat-24px.svg">
-              <img class="h-10 w-10" src="yoga/play.png" alt="">
-            </div> -->
             <!-- pulse -->
             <div class="flex justify-between items-center">
               <svg class="h-10 w-10" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -247,8 +243,7 @@
                   d="M0 50 L20 50 L30 30 L40 70 L50 50 L70 50 L75 40 L80 60 L85 50 L100 50"
                   stroke="white"
                   stroke-width="5"
-                  fill="none"
-                >
+                  fill="none">
                   <animate attributeName="stroke-dashoffset" values="200;0" dur="1.5s" repeatCount="indefinite" />
                   <animate attributeName="stroke-dasharray" values="200,200" dur="1.5s" repeatCount="indefinite" />
                 </path>
@@ -302,8 +297,8 @@
             <!-- right side -->
             <div class="w-96 flex items-center h-40 bg-[#656565]/30 backdrop-blur-md rounded-lg p-2 px-4 space-x-4">
                 <div class="h-auto w-[170px] flex relative">
-                  <img class="rounded-lg bg-cover bg-center" src="/yoga/close-up-kid-meditating-mat.jpg"> 
-                  <img class="h-7 w-7 cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="yoga/play.png" alt="">
+                  <img class="rounded-lg bg-cover bg-center" src="yoga/close-up-kid-meditating-mat.jpg"> 
+                  <img class="h-7 w-7 cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="yoga/play.png">
                   <!--   -->
                 </div>
                 <div class="h-auto w-1/2">
@@ -387,14 +382,13 @@
         const menuBar=document.getElementById("menuBar");
         const mainMenu=document.getElementById("mainMenu");
         menuBar.addEventListener("click", function (params) {
-          // mainMenu.classList.toggle('block')
           if (mainMenu.classList.contains('hidden')) {
-  mainMenu.classList.remove('hidden');
-  mainMenu.classList.add('flex');
-} else {
-  mainMenu.classList.remove('flex');
-  mainMenu.classList.add('hidden');
-}
+            mainMenu.classList.remove('hidden');
+            mainMenu.classList.add('flex');
+          } else {
+            mainMenu.classList.remove('flex');
+            mainMenu.classList.add('hidden');
+          }
         })
       </script>
 </body>
